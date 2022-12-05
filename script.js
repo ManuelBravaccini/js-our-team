@@ -30,3 +30,9 @@ const employees = [
         foto: 'barbara-ramos-graphic-designer.jpg',
     }
 ];
+
+
+
+for (let i = 0; i < employees.length; i++){
+    console.log(employees[i]);
+}
