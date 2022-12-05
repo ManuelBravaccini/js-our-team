@@ -31,8 +31,25 @@ const employees = [
     }
 ];
 
-
-
 for (let i = 0; i < employees.length; i++){
     console.log(employees[i]);
 }
+
+
+
+
+
+
+const empDoc = document.getElementById('employees-info');
+
+
+
+
+
+for (let i = 0; i < employees.length; i++){
+    empDoc.append(employees[i].nome);
+    empDoc.append(employees[i].ruolo);
+    empDoc.append(employees[i].foto);
+    //console.log(employees[i]);
+}
+
