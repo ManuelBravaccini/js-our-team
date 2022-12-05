@@ -37,19 +37,13 @@ for (let i = 0; i < employees.length; i++){
 
 
 
-
-
-
-const empDoc = document.getElementById('employees-info');
-
-
-
-
+const employeesNames = document.getElementById('employees-names');
+const employeesRoles = document.getElementById('employees-roles');
+const employeesPhotos = document.getElementById('employees-photos');
 
 for (let i = 0; i < employees.length; i++){
-    empDoc.append(employees[i].nome);
-    empDoc.append(employees[i].ruolo);
-    empDoc.append(employees[i].foto);
-    //console.log(employees[i]);
+    employeesNames.append(employees[i].nome, ", ");
+    employeesRoles.append(employees[i].ruolo, ", ");
+    employeesPhotos.append(employees[i].foto, ", ");
 }
 
